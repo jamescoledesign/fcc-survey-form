@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+
+<html>
+<body>
+    
+<i class="fas fa-camera fa-3x"></i>    
+    
+<h1 id="title">Photo Tour Survey</h1>
+<p id="description">What did you think of your adventure?</p>
+
+<form id="survey-form">
+
+<!--Name, Email, Rate-->    
+    
+<label id="name-label">Name * </label> <input id="name" type="text" placeholder="First Last" required>
+
+<label id="email-label">Email * </label> <input id="email" type="email" name="email" placeholder="name@website.com" required>
+
+<label id="number-label">Rate your experience on a scale of 1 to 10 </label> <input id="number" type="number" min="1" max="10" name="phone" placeholder="10 = Great! 1 = Needs Improvement">
+
+<!--Dropdown-->    
+    
+<label id="drop">What is your level of photography experience?</label>
+    
+    <select id="dropdown">
+
+    <option disabled value>Select an option</option>
+        
+    <option class="droption" value="1">Beginner</option>
+        
+    <option  value="2">Intermediate</option>
+    
+    <option  value="3">Advanced</option>
+    
+    </select>
+    
+<!--Checkbox-->    
+    
+<label id="checkit">What did you love the most? Check all that apply.</label>  
+    
+    <ul>
+        
+    <li><input type="checkbox" value="1" name="checks"><label>Guides</label></li>
+    <li><input type="checkbox" value="2" name="checks"><label>Location</label></li>
+    <li><input type="checkbox" value="3" name="checks"><label>Information</label></li>
+        
+    </ul>    
+
+<!--Radio-->    
+    
+<label id="reco">Would you recommend this tour to someone else?</label>  
+    
+    <ul>
+    <li><input type="radio" value="1" name="radios"><label>Yes</label></li>
+    <li><input type="radio" value="2" name="radios"><label>No</label></li>
+        
+    </ul>
+
+<!--Comments-->    
+    
+<label id="comment">Any other feedback?</label>
+    
+    <textarea id="box" placeholder="Comments or concerns"></textarea>
+    
+<!--Button-->    
+    
+<button id="submit">Submit</button>
+
+</form>
+    
+</body>
+</html>
